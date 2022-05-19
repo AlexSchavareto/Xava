@@ -15,6 +15,23 @@
 <a href=<?php Documentos::smartlabeldoc_download(); ?>> Download </a><br>
 <a href=<?php Documentos::smartlabeldoc_visualizar(); ?> target="_blank"> Visualizar </a>
 
+</table>
+<hr>
+<h3>API's REST</h3> 
+<table class="table table-success table-striped table-bordered table-hover"> 
+  <tbody>
+    <tr>
+    <th scope="col">SmartLabel</th>
+      <td><a href=<?php Documentos::smartlabeldoc_download(); ?>> Download </a><br></td>
+      <td><a href=<?php Documentos::smartlabeldoc_visualizar(); ?> target="_blank"> Visualizar </a></td>
+    </tr>
+    <tr>
+    <th scope="col">Previsão de entrega</th>
+      <td><a href=<?php Documentos::apiprevisao_download(); ?>> Download </a><br></td>
+      <td><a href=<?php Documentos::apiprevisao_visualizar(); ?> target="_blank"> Visualizar </a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
