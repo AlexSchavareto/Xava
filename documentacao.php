@@ -52,7 +52,7 @@
       <td><a href=<?php DocumentosSoap::ws24_visualizar(); ?> target="_blank"><?php echo $botaoVisualizar?></a></td>
     </tr>
     <tr>
-    <th scope="col">Previsão de entrega</th>
+    <th scope="col">Webservice 26</th>
       <td><a href=<?php DocumentosSoap::ws26_download(); ?>><?php echo $botaoDownload ?></a><br></td>
       <td><a href=<?php DocumentosSoap::ws26_visualizar(); ?> target="_blank"><?php echo $botaoVisualizar?></a></td>
     </tr>
