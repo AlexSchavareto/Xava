@@ -13,8 +13,7 @@
   
   
   <body>
-    
-
+  
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
 
     <div class="container-fluid">
@@ -39,7 +38,7 @@
             <li><a class="dropdown-item" href="endpoint_total.php">Endoint Total</a></li>
             <li><a class="dropdown-item" href="ips.php">IP's</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="linkapi.php">Plataformas</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -53,6 +52,5 @@
     </div>
   </div>
 </nav>
-
 
 

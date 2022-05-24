@@ -1,5 +1,6 @@
 <?php
   require_once("assets/head.php");
+  require_once("assets/botoes.php");
   $ocorrenInt = "https://ics.totalexpress.com.br/oper/edi_retorno_conf.php?reid=13120&ediretconf=13228";
   $notfisInt = "https://ics.totalexpress.com.br/oper/edi_coleta_conf.php?reid=13120&confid=22545";
   $podInt = "https://ics.totalexpress.com.br/oper/edi_retorno_conf.php?reid=12707&ediretconf=19091";
@@ -64,6 +65,30 @@
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <strong>Declaração CSV</strong> - <a href=<?php echo $declaracao?> target="_blank"> CONFIGURAÇÃO</a><br>
+      <strong>Webservice NFo</strong> -  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         Requisição de exemplo</button>
+
+        <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Declaração de Conteúdo com Webservice</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Para utilizar essa integração no Webservice, precisa utilizar o documento fiscal como "outros".
+
+                  <pre><code><?php echo $requestnfo ?></pre></code>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </div>
     </div>
   </div>

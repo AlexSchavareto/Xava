@@ -1,7 +1,7 @@
 <?php
 	require_once("assets/head.php");
 
-	$ws24 = "https://edi.totalexpress.com.br/webservice24.php?wsdl";
+	  $ws24 = "https://edi.totalexpress.com.br/webservice24.php?wsdl";
     $ws26 = "https://edi.totalexpress.com.br/webservice26.php?wsdl";
     $ws24qa = "https://edi-qa.totalexpress.com.br/webservice24.php?wsdl";
     $ws26qa = "https://edi-qa.totalexpress.com.br/webservice26.php?wsdl";
