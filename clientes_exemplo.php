@@ -7,6 +7,8 @@
   $notfis5 = "https://ics.totalexpress.com.br/oper/edi_coleta_conf.php?reid=13601&confid=23975";
   $oco5 = "https://ics.totalexpress.com.br/oper/edi_retorno_conf.php?reid=19172&ediretconf=12979";
   $declaracao = "https://ics.totalexpress.com.br/oper/edi_conf_csv.php?edicolconf_id=28855";
+  $conembInt = "https://ics.totalexpress.com.br/oper/edi_faturamento_conf.php?reid=17717&fatarqconf_id=2767";
+  $xmlcte = "https://ics.totalexpress.com.br/oper/edi_retorno_conf.php?reid=17717&ediretconf=14142";
 
 ?>
 <div class="container">
@@ -52,6 +54,8 @@
       <strong>NOTFIS 3.1</strong> - <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br>
       <strong>OCORREN 3.1</strong> - <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br>
       <strong>POD Intelipost</strong> - <a href=<?php echo $podInt;?> target="_blank"> PHILIP MORRIS</a><br>
+      <strong>CONEMB </strong> - <a href=<?php echo $podInt;?> target="_blank"> TEM NA TRENA</a><br>
+      <strong>CTE</strong> - <a href=<?php echo $podInt;?> target="_blank"> TEM NA TRENA</a><br>
       </div>
     </div>
   </div>

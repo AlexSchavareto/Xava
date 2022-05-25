@@ -78,25 +78,73 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/frenet.png" class="card-img-top" alt="Frenet">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">FRENET</h5>
+        <p class="card-text">Integração possibilita: <br>
+                                – Consultar fretes <br>
+                                 <br>
+                                 <br>
+                                <a href = "https://ajuda.frenet.com.br/s/article/integracao-total-express" target="_blank"> Ver Manual </a></p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#frenetModal">
+                                Configuração</button>
+          <!-- Modal -->
+          <div class="modal fade" id="frenetModal" tabindex="-1" aria-labelledby="frenet" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="frenet">Frenet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                - Configurar coleta Webservice e Tracking no ICS. <br>
+                - Informar credenciais de Webservice ao cliente. <hr>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/nuvemshop.png" class="card-img-top" alt="Nuvemshop">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Nuvemshop</h5>
+        <p class="card-text">Integração possibilita: <br>
+                                – Consultar fretes <br>
+                                – Solicitar coletas <br>
+                                – Tracking de pedidos <br>
+                                <a href = "https://totalexpress.com.br/integracao-nuvemshop/" target="_blank"> Ver Manual </a></p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuvemshopModal">
+                                Configuração</button>
+          <!-- Modal -->
+          <div class="modal fade" id="nuvemshopModal" tabindex="-1" aria-labelledby="nuvemshop" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="nuvemshop">Frenet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                - Configurar coleta Webservice e Tracking ssssno ICS. <br>
+                - Informar credenciais de Webservice ao cliente. <hr>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
