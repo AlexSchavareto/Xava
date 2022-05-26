@@ -70,7 +70,7 @@
       <div class="accordion-body">
       <strong>Declaração CSV</strong> - <a href=<?php echo $declaracao?> target="_blank"> CONFIGURAÇÃO</a><br>
       <strong>Webservice NFo</strong> -  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-         Requisição de exemplo</button>
+         Requisição de exemplo</button> Ignorar esse botão por enquanto
 
         <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -83,7 +83,7 @@
                 <div class="modal-body">
                   Para utilizar essa integração no Webservice, precisa utilizar o documento fiscal como "outros".
 
-                  <pre><code><?php echo $requestnfo ?></pre></code>
+                  <pre><code><?php echo $requestnfo ?></pre></code> 
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
