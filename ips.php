@@ -6,14 +6,14 @@
 <br>
 <h3>IP's para liberação</h3>
 
-<div class="accordion" id="accordionExample">
+<div class="accordion" id="acclinkapi">
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <h2 class="accordion-header" id="headinglinkapi">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapselinkapi" aria-expanded="true" aria-controls="collapselinkapi">
         LinkApi
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapselinkapi" class="accordion-collapse collapse show" aria-labelledby="headinglinkapi" data-bs-parent="#acclinkapi">
       <div class="accordion-body">
       <strong>13.90.231.129</strong><br>
       <strong>35.174.51.251</strong><br> 
@@ -58,6 +58,23 @@
   </div>
 
   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Ecossys
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <strong>179.124.193.46</strong><br>
+      <strong>177.72.249.100</strong><br>
+      <strong>201.49.73.126</strong><br>
+      <strong>18.231.88.147</strong><br>
+      <strong>54.233.124.190</strong><br>
+    </div>
+  </div>
+</div>
+
+  <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         IP da Total Express
@@ -70,3 +87,4 @@
     </div>
   </div>
 </div>
+
