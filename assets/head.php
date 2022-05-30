@@ -37,6 +37,7 @@
             <li><a class="dropdown-item" href="endpoint_aws.php">Endpoint AWS</a></li>
             <li><a class="dropdown-item" href="endpoint_total.php">Endoint Total</a></li>
             <li><a class="dropdown-item" href="ips.php">IP's</a></li>
+            <li><a class="dropdown-item" href="amazon.php">Amazon</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="plataformas.php">Plataformas</a></li>
           </ul>
