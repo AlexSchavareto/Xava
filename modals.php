@@ -1,3 +1,6 @@
+<?php
+  $linktray = '<a href = "https://atendimento.tray.com.br/hc/pt-br/articles/360053111752-Pr%C3%A9-inser%C3%A7%C3%A3o-da-URL-de-Rastreio-em-suas-Tabelas-de-Frete-e-Pedidos" target="_blank">' 
+?>
 <!-- De Para DBA -->
 <div class="modal fade" id="dbaModal" tabindex="-1" aria-labelledby="dba" aria-hidden="true">
  <div class="modal-dialog modal-lg">
@@ -48,7 +51,14 @@
      - Configurar coleta Webservice e Tracking no ICS. <br>
      - Informar credenciais de Webservice ao cliente. <hr>
       Atribuir o ID gerado na LinkApi no link abaixo: <br>
-     <pre>https://freight-calculation.gateway.linkapi.com.br/v1/tray?apiKey=</pre>
+     <pre>https://freight-calculation.gateway.linkapi.com.br/v1/tray?apiKey=</pre> <hr>
+
+     - Como inserir a URL de rastreio <?php echo $linktray ?> Ver Manual </a> <br>
+     - O cliente realizando essa configuração irá enviar o link para o cliente final. <hr>
+     - <strong>URL Rastreio da Total:</strong>  <br> http://tracking.totalexpress.com.br/poupup_track.php?reid=<font color="#FF0000">wwww</font>&pedido=<font color="#FF0000">xxxx</font>&nfiscal=<font color="#FF0000">yyyyy</font> <br>
+     <font color="#FF0000">wwww</font> = numero de registro na Total <br>
+     <font color="#FF0000">xxxx</font>= numero do pedido <br>
+     <font color="#FF0000">yyyy</font> = numero da nota fiscal <br>
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
