@@ -145,19 +145,24 @@
 </div>
 
 <!-- Gerar Senha -->
-<div class="modal fade" id="gsenhaModal" tabindex="-1" aria-labelledby="gsenha" aria-hidden="true">
+<div class="modal fade" id="gsenhaModal" tabindex="-1" aria-labelledby="gsenha" aria-hidden="true" method="post">
  <div class="modal-dialog modal-lg">
    <div class="modal-content">
      <div class="modal-header">
-       <h5 class="modal-title" id="gsenha">De x Para - Amazon DBA</h5>
+       <h5 class="modal-title" id="gsenha">Gerador de Senha</h5>
        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
      </div>
      <div class="modal-body">
+     <?php
+      if (isset($_POST['enviar'])) {
+         echo "ok";
+        };
+      ?>
      <?php echo generatePassword();?>
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-       <button type="input" class="btn btn-primary" type="button" value="novaSenha" onclick='generatePassword()'>Gerar nova senha</button>
+       <button type="submit" class="btn btn-primary"  name="enviar" value="enviar" >Gerar nova senha</button>
      </div>
    </div>
  </div>

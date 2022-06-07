@@ -15,6 +15,7 @@
 
 <h1>Clientes/Configurações de exemplo</h1><br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -25,7 +26,7 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-      <strong>NOTFIS 3.1</strong> - <a href=<?php echo $notfisInt;?>target="_blank"> RIACHUELO</a><br>
+      <strong>NOTFIS 3.1</strong><br> - Cliente de Exemplo: <a href=<?php echo $notfisInt;?>target="_blank"> RIACHUELO</a><br>- Arquivo de Exemplo: <a href=> Baixar</a> <hr>
       <strong>NOTFIS 5.0</strong> - <a href=<?php echo $notfis5;?>target="_blank"> MERCUR</a><br>
     </div>
     </div>
@@ -82,8 +83,10 @@
                 </div>
                 <div class="modal-body">
                   Para utilizar essa integração no Webservice, precisa utilizar o documento fiscal como "outros".
-
-                  <pre><code><?php echo $requestnfo ?></pre></code> 
+                  <pre class="prettyprint lang-xml"> &lt;&#x3f;xml version&#x3d;&quot;1.0&quot;&#x3f;&gt;
+&lt;users&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;user uid&#x3d;&quot;user12&quot; name&#x3d;&quot;Matt&quot; mail&#x3d;&quot;user12&#x40;example.com&quot;&#x2f;&gt;
+&lt;&#x2f;users&gt;</pre>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
