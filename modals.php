@@ -116,7 +116,8 @@
       </div>
       <div class="modal-body">
       - Verificar se a conta se encontra Ativa no ICS <br><hr>
-      Essa integração não precisamos informar nenhuma credencial, o cliente consegue seguir sozinho com o manual.
+      Essa integração não precisamos informar nenhuma credencial, o cliente consegue seguir sozinho com o manual. <hr>
+      Obs: Não funciona mais pela LinkApi, agora a integração está pela Digibee.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
@@ -145,7 +146,7 @@
 </div>
 
 <!-- Gerar Senha -->
-<div class="modal fade" id="gsenhaModal" tabindex="-1" aria-labelledby="gsenha" aria-hidden="true" method="post">
+<div class="modal fade" id="gsenhaModal" tabindex="-1" aria-labelledby="gsenha" aria-hidden="true" >
  <div class="modal-dialog modal-lg">
    <div class="modal-content">
      <div class="modal-header">
@@ -153,17 +154,26 @@
        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
      </div>
      <div class="modal-body">
-     <?php
-      if (isset($_POST['enviar'])) {
-         echo "ok";
-        };
-      ?>
-     <?php echo generatePassword();?>
+     <script>
+        function getPassword() {
+      var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%&";
+      var passwordLength = 8;
+      var password = "";
+
+      for (var i = 0; i < passwordLength; i++) {
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randomNumber, randomNumber + 1);
+      }
+      document.getElementById('password').value = password
+    }
+    </script>
+     <input type="text" placeholder="Clique no botão abaixo" id="password">
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-       <button type="submit" class="btn btn-primary"  name="enviar" value="enviar" >Gerar nova senha</button>
+       <button type="submit" class="btn btn-primary"  name="enviar" value="enviar" onclick="getPassword()">Gerar nova senha</button>
      </div>
    </div>
  </div>
 </div>
+

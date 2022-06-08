@@ -1,5 +1,6 @@
 <?php
   require_once("assets/head.php");
+  $a = "https://ics.totalexpress.com.br/oper/amazon_mfn.php";
 ?>
 
 <div class="container">
@@ -12,9 +13,10 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Amazon DBA</h5>
-        <p class="card-text">- Nessa integração as encomendas são direcionadas automaticamente pelo CEP do seller, dentro do arquivo. <br> 
-                                - O cadastro do seller é automático, quando se trata de um seller novo, ele será criado assim que importar o arquivo no ICS. </p>
-        <a href="#" class="btn btn-primary"></a>
+        <p class="card-text"> <li>Nessa integração as encomendas são direcionadas automaticamente pelo CEP do seller, dentro do arquivo.</li> <br> 
+                                <li> O cadastro do seller é automático, quando se trata de um seller novo, ele será criado assim que importar o arquivo no ICS.</li><br>
+                                  <li> O arquivo só irá ser processado caso o CEP estiver cadastrado na tabela amazon_mfn</li></p>
+        <a href=<?php echo $a;?> target="_blank" class="btn btn-primary">Cadastrar/Consultar CEPs</a>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dbaModal"> De x Para</button>
 
         
@@ -40,8 +42,5 @@
     </div>
   </div>
 </div>
-
-
-
 
 <?php require_once("modals.php")?>

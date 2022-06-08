@@ -11,6 +11,7 @@
     <title>Guia do Xavá</title>
   </head>
   <body>
+    
 <?php require_once("assets/head.php"); 
       require_once("geradordesenha.php");
       require_once("modals.php");?>
@@ -34,22 +35,14 @@
   </div>
   <div class="offcanvas-body">
     <div>
-      Texto qualquer
     </div>
     <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Botão
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gsenhaModal">Gerador de senha</a></li>
-        <!--<li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+      <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gsenhaModal">Gerador de senha</a><br><br>  
+
       </ul>
     </div>
   </div>
 </div>
-
-
-
   </body>
 </html>
+

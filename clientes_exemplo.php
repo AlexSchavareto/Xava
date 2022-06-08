@@ -26,7 +26,7 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-      <strong>NOTFIS 3.1</strong><br> - Cliente de Exemplo: <a href=<?php echo $notfisInt;?>target="_blank"> RIACHUELO</a><br>- Arquivo de Exemplo: <a href=> Baixar</a> <hr>
+      <strong>NOTFIS 3.1</strong><br> - Cliente de Exemplo: <a href=<?php echo $notfisInt;?>target="_blank"> RIACHUELO</a><br>- Arquivo de Exemplo: <a href=> DOWNLOAD</a> <hr>
       <strong>NOTFIS 5.0</strong> - <a href=<?php echo $notfis5;?>target="_blank"> MERCUR</a><br>
     </div>
     </div>
