@@ -8,13 +8,12 @@
 </div>
 <div class= "container"> 
 
+  <!-- Tray -->
 <div class="row row-cols-1 row-cols-md-6 g-1">
   <div class="col">
     <div class="card">
     <img src="assets/traylogo.jpg" class="img-fluid rounded-start" alt="Tray">
-    
       <div class="card-body"  style="width: 200px;">
-
         <h5 class="card-title">TRAY</h5>
         <p class="card-text">Integração possibilita: <br>
                                 – Consultar fretes <br>
@@ -25,7 +24,7 @@
       </div>
     </div>
   </div>
-  
+    <!-- Bling -->
   <div class="col">
     <div class="card">
       <img src="assets/blinglogo.png" class="card-img-top" alt="...">
@@ -40,6 +39,7 @@
       </div>
     </div>
   </div>
+  <!-- Frenet -->
   <div class="col">
     <div class="card">
       <img src="assets/frenet.png" class="card-img-top rounded float-start" style="width: 200px" alt="Frenet">
@@ -54,6 +54,7 @@
       </div>
     </div>
   </div>
+  <!-- Nuvemshop -->
   <div class="col">
     <div class="card">
       <img src="assets/nuvemshop.png" class="card-img-top" style="width: 200px" alt="Nuvemshop">
@@ -68,6 +69,7 @@
       </div>
     </div>
   </div>
+  <!-- Tiny -->
   <div class="col">
     <div class="card" >
       <img src="assets/tiny.png" class="card-img-top" style="width: 200px" alt="Tiny">
@@ -79,9 +81,10 @@
                                     – Tracking de pedidos <br>
         <a href = "https://www.tiny.com.br/integracoes/total-express" target="_blank"> Ver Manual </a></p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tinyModal">Detalhes</button> 
-        </div>
+      </div>
     </div>
   </div>
+  <!-- Vtex -->
   <div class="col">
     <div class="card">
       <img src="assets/vtex.png" class="card-img-center" alt="...">
@@ -97,6 +100,24 @@
     </div>
   </div>
 </div>
+<!-- Pluggto -->
+<div class="row row-cols-1 row-cols-md-6 g-1">
+  <div class="col">
+    <div class="card">
+    <img src="assets/pluggto.png" class="img-fluid rounded-start" alt="Plugg.to">
+      <div class="card-body"  style="width: 200px;">
+        <h5 class="card-title">Plugg.to</h5>
+        <p class="card-text">Integração possibilita: <br>
+                                – Consultar fretes <br>
+                                  – Solicitar coletas <br>
+                                    – Tracking de pedidos <br>
+        <a href = "https://totalexpress.com.br/e-total/integracoes/integracao-plugg-to/" target="_blank"> Ver Manual </a></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#plugModal"> Detalhes</button>  
+      </div>
+    </div>
+  </div>
+
+</div> 
 
 <?php require_once("modals.php") ?>
 
