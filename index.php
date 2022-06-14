@@ -1,20 +1,8 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Guia do Xavá</title>
-  </head>
-  <body>
-    
 <?php require_once("assets/head.php"); 
       require_once("geradordesenha.php");
-      require_once("modals.php");?>
+      require_once("modals.php");
+      require_once("classes/classApi.php");
+      $a = new GerarTokenApi;?>
 <div class = "container text-center"><br>
 <h1>Guia do Xavá boladão</h1>
 
@@ -37,12 +25,32 @@
     <div>
     </div>
     <div class="dropdown mt-3">
-      <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gsenhaModal">Gerador de senha</a><br><br>  
-
+      <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gsenhaModal">Gerador de senha</a><br><br>
       </ul>
     </div>
   </div>
 </div>
+<hr>
+
+<form method="post" action="./">
+    <input class="btn btn-primary" type=submit required  name='insert' value="Gerar Token(prod)">
+</form><br>
+ <?php
+  if (isset($_POST['insert'])){
+  echo '<div class="alert alert-dark" role="alert"><strong>access_token: </strong>';
+  $a -> gerarToken();
+  echo '</div>';
+   }
+?>
+
+
+<?php //$a -> buscarRota();?></div>
+ </div>
+
+
+
+
+
   </body>
 </html>
 
