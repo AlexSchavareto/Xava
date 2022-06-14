@@ -167,6 +167,28 @@
   </div>
 </div>
 
+<!-- Anymarket -->
+<div class="modal fade" id="anymarketModal" tabindex="-1" aria-labelledby="anymarket" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="anymarket">AnyMarket</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+     - Configurar coleta Webservice e Tracking no ICS. <br>
+     - Informar credenciais de Webservice ao cliente. <hr>
+      Atribuir o ID gerado na LinkApi no link abaixo: <br>
+     <pre>https://freight-calculation.gateway.linkapi.com.br/v1/anymarket?apiKey=</pre> <hr>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Gerar Senha -->
 <div class="modal fade" id="gsenhaModal" tabindex="-1" aria-labelledby="gsenha" aria-hidden="true" >
  <div class="modal-dialog modal-lg">

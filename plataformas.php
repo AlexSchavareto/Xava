@@ -9,7 +9,7 @@
 <div class= "container"> 
 
   <!-- Tray -->
-<div class="row row-cols-1 row-cols-md-6 g-1">
+<div class="row row-cols-6 row-cols-md-6 g-1">
   <div class="col">
     <div class="card">
     <img src="assets/traylogo.jpg" class="img-fluid rounded-start" alt="Tray">
@@ -27,7 +27,7 @@
     <!-- Bling -->
   <div class="col">
     <div class="card">
-      <img src="assets/blinglogo.png" class="card-img-top" alt="...">
+      <img src="assets/blinglogo.png" class="card-img-top" alt="Bling">
       <div class="card-body">
         <h5 class="card-title">BLING</h5>
         <p class="card-text">Integração possibilita: <br>
@@ -100,8 +100,10 @@
     </div>
   </div>
 </div>
+
+
 <!-- Pluggto -->
-<div class="row row-cols-1 row-cols-md-6 g-1">
+<div class="row row-cols-3 row-cols-md-6 g-1">
   <div class="col">
     <div class="card">
     <img src="assets/pluggto.png" class="img-fluid rounded-start" alt="Plugg.to">
@@ -113,6 +115,22 @@
                                     – Tracking de pedidos <br>
         <a href = "https://totalexpress.com.br/e-total/integracoes/integracao-plugg-to/" target="_blank"> Ver Manual </a></p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#plugModal"> Detalhes</button>  
+      </div>
+    </div>
+  </div>
+
+  <!-- AnyMarket -->
+  <div class="col">
+    <div class="card">
+    <img src="assets/anymarket.jpg" class="img-fluid rounded-start" alt="Anymarket">
+      <div class="card-body"  style="width: 200px;">
+        <h5 class="card-title">AnyMarket</h5>
+        <p class="card-text">Integração possibilita: <br>
+                                – Consultar fretes <br>
+                                  – Solicitar coletas <br>
+                                    – Tracking de pedidos <br>
+        <a href = "https://totalexpress.com.br/e-total/integracoes/integracao-anymarket/" target="_blank"> Ver Manual </a></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#anymarketModal"> Detalhes</button>  
       </div>
     </div>
   </div>
