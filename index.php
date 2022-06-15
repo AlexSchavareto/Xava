@@ -31,7 +31,7 @@
   </div>
 </div>
 <hr>
-
+<h3>Gerador de Token</h3>
 <form method="post" action="./">
     <input class="btn btn-primary" type=submit required  name='insert' value="Gerar Token(prod)">
 </form><br>
@@ -41,15 +41,79 @@
   $a -> gerarToken();
   echo '</div>';
    }
+?><hr>
+
+<h3>Buscar Rota</h3>
+<form action="./" method="post">
+			<div class="form-group">
+				<label>REID</label>
+				<input type="text" name="reid" class="form-control" >
+			</div>
+
+			<div class="form-group">
+				<label>CEP</label>
+				<input type="text" required name="cep" class="form-control" >
+			</div>
+			<button type="submit" name="enviar" class="btn btn-primary" value="enviar">Enviar</button>
+		</form>
+
+<?php if (isset($_POST['reid'],$_POST['cep'] )){
+        //API Gerar Token
+        $request = '{"grant_type": "password","username": "hidrogenio-api","password": "UaN8q@uun"}';
+        $curlOptions = [
+            CURLOPT_URL => 'https://apis.totalexpress.com.br/ics-seguranca/v1/oauth2/tokenGerar',
+            CURLOPT_POST => true,
+            CURLOPT_HTTPHEADER => [
+                'Authorization: Basic SUNTOnRvdGFs',
+                'Content-Type: application/json',
+                'x-li-format: json'
+            ],
+            CURLOPT_POSTFIELDS => $request,
+        ];
+        
+        $ch = curl_init();
+        curl_setopt_array($ch, $curlOptions);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $token = json_decode(curl_exec($ch));
+        $ch = curl_close($ch);
+            if (isset($token->access_token)){
+                $bearerToken = $token->access_token;
+                //API Buscar Rota
+                $request = '{"reid": ' . $_POST['reid'] . ',"cep": ' . $_POST['cep'] . '}';
+    
+                $curlOptions = [
+                    CURLOPT_URL => 'https://apis.totalexpress.com.br/ics-edi/v1/coleta/smartLabel/rota/buscar',
+                    CURLOPT_POST => true,
+                    CURLOPT_HTTPHEADER => [
+                        'Content-Type: application/json',
+                        'x-li-format: json'
+                    ],
+                    CURLOPT_POSTFIELDS => $request,
+                ];
+    
+                $ch = curl_init();
+                curl_setopt_array($ch, $curlOptions);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BEARER);
+                curl_setopt($ch,CURLOPT_XOAUTH2_BEARER, $token->access_token);
+                $rota = json_decode(curl_exec($ch));
+            }else{ 
+                echo "Falha ao Buscar Rota na API";
+                }
+
+                if (in_array(NULL, $_POST)) { 
 ?>
+    <div class="alert alert-primary text-center" role="alert">
+        Algum campo está vazio, volte e preencha novamente.
+    </div>
 
+<?php  }else {
+        echo $rota->descricao;
+        }
+}?>
 
-<?php //$a -> buscarRota();?></div>
- </div>
-
-
-
-
+    </div>
+  </div>
 
   </body>
 </html>
