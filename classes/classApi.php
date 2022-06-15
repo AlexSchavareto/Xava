@@ -66,4 +66,10 @@
         
     }
 }
+
+Class Outra extends GerarTokenApi{
+    function alex(){
+        echo $rota->descricao;
+    }
+}
 ?>
