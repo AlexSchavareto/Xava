@@ -31,6 +31,12 @@
         static function apipod_visualizar(){
             echo "https://drive.google.com/file/d/1cjmvdlhImWfyQOA6VvJ-wT7jErNc8sAr/view?usp=sharing";
         }
+        static function apibuscarota_download(){
+            echo "https://docs.google.com/uc?export=download&id=1vuPqmhILmdQqIS81nuKbjrZ-KBiJ1dId";
+        }
+        static function apibuscarota_visualizar(){
+            echo "https://drive.google.com/file/d/1vuPqmhILmdQqIS81nuKbjrZ-KBiJ1dId/view?usp=sharing";
+        }
         
     }
 
