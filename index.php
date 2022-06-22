@@ -52,7 +52,7 @@
 
 			<div class="form-group">
 				<label>CEP</label>
-				<input type="text" required name="cep" class="form-control" >
+				<input type="text" name="cep" class="form-control" >
 			</div>
 			<button type="submit" name="enviar" class="btn btn-primary" value="enviar">Enviar</button>
 		</form>
