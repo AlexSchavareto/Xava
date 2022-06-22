@@ -39,6 +39,10 @@
       <td><a href=<?php DocumentosRest::apipod_download(); ?>><?php echo $botaoDownload ?></a><br></td>
       <td><a href=<?php DocumentosRest::apipod_visualizar(); ?> target="_blank"><?php echo $botaoVisualizar?></a></td>
     </tr>
+    <th scope="col">API Buscar Rota</th>
+      <td><a href=<?php DocumentosRest::apibuscarota_download(); ?>><?php echo $botaoDownload ?></a><br></td>
+      <td><a href=<?php DocumentosRest::apibuscarota_visualizar(); ?> target="_blank"><?php echo $botaoVisualizar?></a></td>
+    </tr>
   </tbody>
 </table>
 
