@@ -55,8 +55,8 @@
       <strong>NOTFIS 3.1</strong> - <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br>
       <strong>OCORREN 3.1</strong> - <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br>
       <strong>POD Intelipost</strong> - <a href=<?php echo $podInt;?> target="_blank"> PHILIP MORRIS</a><br>
-      <strong>CONEMB </strong> - <a href=<?php echo $podInt;?> target="_blank"> TEM NA TRENA</a><br>
-      <strong>CTE</strong> - <a href=<?php echo $podInt;?> target="_blank"> TEM NA TRENA</a><br>
+      <strong>CONEMB </strong> - <a href=<?php echo $conembInt;?> target="_blank"> TEM NA TRENA</a><br>
+      <strong>CTE (zip)</strong> - <a href=<?php echo $xmlcte;?> target="_blank"> TEM NA TRENA</a><br>
       </div>
     </div>
   </div>
