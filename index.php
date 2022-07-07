@@ -1,13 +1,12 @@
 <?php require_once("assets/head.php"); 
       require_once("geradordesenha.php");
       require_once("modals.php");
-      require_once("classes/classApi.php");
-      $a = new GerarTokenApi;?>
+      require_once("classes/Rota.php");
+      $b = new Rota();?>
 <div class = "container text-center"><br>
 <h1>Guia do Xavá boladão</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   Ferramentas
@@ -32,19 +31,18 @@
 </div>
 <hr>
 <h3>Gerador de Token</h3>
-<form method="post" action="./">
+<form method="post" action="./  ">
     <input class="btn btn-primary" type=submit required  name='insert' value="Gerar Token(prod)">
 </form><br>
  <?php
   if (isset($_POST['insert'])){
-  echo '<div class="alert alert-dark" role="alert"><strong>access_token: </strong>';
-  $a -> gerarToken();
-  echo '</div>';
+  echo '<div class="alert alert-dark" role="alert"><strong>access_token: </strong>' . $b -> gerarToken() . '</div>';
    }
-?><hr>
-
-<h3>Buscar Rota</h3>
-<form action="./" method="post">
+?>
+<hr>
+  <h3>Buscar Rota</h3>
+  
+    <form action="./" method="post">
 			<div class="form-group">
 				<label>REID</label>
 				<input type="text" name="reid" class="form-control" >
@@ -57,64 +55,17 @@
 			<button type="submit" name="enviar" class="btn btn-primary" value="enviar">Enviar</button>
 		</form>
 
-<?php if (isset($_POST['reid'],$_POST['cep'] )){
-        //API Gerar Token
-        $request = '{"grant_type": "password","username": "hidrogenio-api","password": "UaN8q@uun"}';
-        $curlOptions = [
-            CURLOPT_URL => 'https://apis.totalexpress.com.br/ics-seguranca/v1/oauth2/tokenGerar',
-            CURLOPT_POST => true,
-            CURLOPT_HTTPHEADER => [
-                'Authorization: Basic SUNTOnRvdGFs',
-                'Content-Type: application/json',
-                'x-li-format: json'
-            ],
-            CURLOPT_POSTFIELDS => $request,
-        ];
-        
-        $ch = curl_init();
-        curl_setopt_array($ch, $curlOptions);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $token = json_decode(curl_exec($ch));
-        $ch = curl_close($ch);
-            if (isset($token->access_token)){
-                $bearerToken = $token->access_token;
-                //API Buscar Rota
-                $request = '{"reid": ' . $_POST['reid'] . ',"cep": ' . $_POST['cep'] . '}';
-    
-                $curlOptions = [
-                    CURLOPT_URL => 'https://apis.totalexpress.com.br/ics-edi/v1/coleta/smartLabel/rota/buscar',
-                    CURLOPT_POST => true,
-                    CURLOPT_HTTPHEADER => [
-                        'Content-Type: application/json',
-                        'x-li-format: json'
-                    ],
-                    CURLOPT_POSTFIELDS => $request,
-                ];
-    
-                $ch = curl_init();
-                curl_setopt_array($ch, $curlOptions);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BEARER);
-                curl_setopt($ch,CURLOPT_XOAUTH2_BEARER, $token->access_token);
-                $rota = json_decode(curl_exec($ch));
-            }else{ 
-                echo "Falha ao Buscar Rota na API";
-                }
-
-                if (in_array(NULL, $_POST)) { 
+<?php 
+    if (isset($_POST['reid'],$_POST['cep'] )){
+      echo $b->buscarRota($_POST['reid'], $_POST['cep']);       
+        }if (in_array(NULL, $_POST)) { 
 ?>
     <div class="alert alert-primary text-center" role="alert">
         Algum campo está vazio, volte e preencha novamente.
     </div>
-
-<?php  }else {
-        echo $rota->descricao;
-        }
-}?>
+<?php  } ?>
 
     </div>
   </div>
-
   </body>
 </html>
-
