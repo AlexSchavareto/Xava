@@ -26,7 +26,7 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-      <strong><li>NOTFIS 3.1</li></strong> - Cliente de Exemplo: <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br>- Arquivo de Exemplo: <a href=> DOWNLOAD</a> <hr>
+      <strong><li>NOTFIS 3.1</li></strong> - Cliente de Exemplo: <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br> - Arquivo de Exemplo: <a href=> DOWNLOAD</a> <hr>
       <strong><li>NOTFIS 5.0</li></strong> - Cliente de Exemplo: <a href=<?php echo $notfis5;?> target="_blank"> MERCUR</a><br>
     </div>
     </div>
@@ -39,8 +39,8 @@
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-      <strong>OCORREN 5.0</strong> - <a href=<?php echo $oco5?> target="_blank"> C & C</a><br>
-      <strong>OCORREN 3.1</strong> - <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br>
+      <strong><li>OCORREN 5.0</li></strong> - Cliente de Exemplo: <a href=<?php echo $oco5?> target="_blank"> C & C</a><br> - Arquivo de Exemplo: <a href=> DOWNLOAD</a> <hr>
+      <strong><li>OCORREN 3.1</li></strong> - Cliente de Exemplo: <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br> - Arquivo de Exemplo: <a href=> DOWNLOAD</a>
     </div>
     </div>
   </div>
@@ -52,11 +52,11 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-      <strong>NOTFIS 3.1</strong> - <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br>
-      <strong>OCORREN 3.1</strong> - <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br>
-      <strong>POD Intelipost</strong> - <a href=<?php echo $podInt;?> target="_blank"> PHILIP MORRIS</a><br>
-      <strong>CONEMB </strong> - <a href=<?php echo $conembInt;?> target="_blank"> TEM NA TRENA</a><br>
-      <strong>CTE (zip)</strong> - <a href=<?php echo $xmlcte;?> target="_blank"> TEM NA TRENA</a><br>
+      <strong><li>NOTFIS 3.1</strong> - <a href=<?php echo $notfisInt;?> target="_blank"> RIACHUELO</a><br>
+      <strong><li>OCORREN 3.1</strong> - <a href=<?php echo $ocorrenInt;?> target="_blank"> RIACHUELO</a><br>
+      <strong><li>POD Intelipost</strong> - <a href=<?php echo $podInt;?> target="_blank"> PHILIP MORRIS</a><br>
+      <strong><li>CONEMB </strong> - <a href=<?php echo $conembInt;?> target="_blank"> TEM NA TRENA</a><br>
+      <strong><li>CTE (zip)</strong> - <a href=<?php echo $xmlcte;?> target="_blank"> TEM NA TRENA</a><br>
       </div>
     </div>
   </div>
