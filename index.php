@@ -50,14 +50,14 @@
 
 			<div class="form-group">
 				<label>CEP</label>
-				<input type="text" name="cep" class="form-control" >
-			</div>
-			<button type="submit" name="enviar" class="btn btn-primary" value="enviar">Enviar</button>
+				<input type="text" name="cep" class="form-control" size=8 maxlength=8>
+			</div><br>
+			<button type="submit" name="enviar" class="btn btn-primary" value="enviar">Buscar Rota</button>
 		</form>
 
 <?php 
     if (isset($_POST['reid'],$_POST['cep'] )){
-      echo $b->buscarRota($_POST['reid'], $_POST['cep']);       
+      echo $b->buscarRota($_POST['reid'], $_POST["cep"]);       
         }if (in_array(NULL, $_POST)) { 
 ?>
     <div class="alert alert-primary text-center" role="alert">
