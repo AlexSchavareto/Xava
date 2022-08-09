@@ -27,7 +27,8 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Amazon FBAOS</h5>
-        <p class="card-text">Os arquivos são direcionados pela tag &lt;warehouseLocationId&gt;</p>
+        <p class="card-text"><li> Nessa integração as encomendas são direcionadas automaticamentepela tag &lt;warehouseLocationId&gt;</li><br>
+                              <li> É possível consultar os IDs pela coluna ID Externo, dentro do cadastro do cliente</p>
         <a href="#" class="btn btn-primary"></a>
       </div>
     </div>
