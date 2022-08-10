@@ -11,14 +11,13 @@ class Rota
     {
         $bearerToken = $this->gerarToken();
         //API Buscar Rota
-        $request = '{"reid": ' . $reid . ',"cep": ' . $cep . '}';
+        $request = '{"reid": ' . $reid . ',"cep": "' . $cep . '"}';
 
         $curlOptions = [
             CURLOPT_URL => 'https://apis.totalexpress.com.br/ics-edi/v1/coleta/smartLabel/rota/buscar',
             CURLOPT_POST => true,
             CURLOPT_HTTPHEADER => [
                 'Content-Type: application/json',
-                'x-li-format: json'
             ],
             CURLOPT_POSTFIELDS => $request,
         ];
@@ -42,7 +41,6 @@ class Rota
              CURLOPT_HTTPHEADER => [
                  'Authorization: Basic SUNTOnRvdGFs',
                  'Content-Type: application/json',
-                 'x-li-format: json'
              ],
              CURLOPT_POSTFIELDS => $request,
          ];
