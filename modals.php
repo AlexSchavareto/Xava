@@ -1,5 +1,6 @@
 <?php
-  $linktray = '<a href = "https://atendimento.tray.com.br/hc/pt-br/articles/360053111752-Pr%C3%A9-inser%C3%A7%C3%A3o-da-URL-de-Rastreio-em-suas-Tabelas-de-Frete-e-Pedidos" target="_blank">' 
+  $linktray = '<a href = "https://atendimento.tray.com.br/hc/pt-br/articles/360053111752-Pr%C3%A9-inser%C3%A7%C3%A3o-da-URL-de-Rastreio-em-suas-Tabelas-de-Frete-e-Pedidos" target="_blank">';
+  $linkvideotray = '<a href = "https://www.youtube.com/watch?v=OGX3Phl1CJI" target="_blank">';
 ?>
 <!-- De Para DBA -->
 <div class="modal fade" id="dbaModal" tabindex="-1" aria-labelledby="dba" aria-hidden="true">
@@ -53,7 +54,7 @@
       Atribuir o ID gerado na LinkApi no link abaixo: <br>
      <pre>https://freight-calculation.gateway.linkapi.com.br/v1/tray?apiKey=</pre> <hr>
 
-     - Como inserir a URL de rastreio <?php echo $linktray ?> Ver Manual </a> <br>
+     - Como inserir a URL de rastreio <?php echo $linktray ?> Ver Manual </a>  ou <?php echo $linkvideotray ?> Ver Video Tutorial </a><br> 
      - O cliente realizando essa configuração irá enviar o link para o cliente final. <hr>
      - <strong>URL Rastreio da Total:</strong>  <br> http://tracking.totalexpress.com.br/poupup_track.php?reid=<font color="#FF0000">wwww</font>&pedido=<font color="#FF0000">xxxx</font>&nfiscal=<font color="#FF0000">yyyyy</font> <br>
      <font color="#FF0000">wwww</font> = numero de registro na Total <br>
